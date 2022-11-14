@@ -8,7 +8,9 @@ export default class App extends Component {
     stus: [],
     isLoading: false
   }
-
+  handleAddTodo = () => {
+    // 添加todo 
+  }
   handleClick = () => {
     this.setState({
       stus: [],
