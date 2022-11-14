@@ -11,6 +11,7 @@ export default class App extends Component {
   handleAddTodo = () => {
     // 添加todo 
   }
+
   handleClick = () => {
     this.setState({
       stus: [],
@@ -29,6 +30,8 @@ export default class App extends Component {
     let className = classNames(Style.special, { [Style.loading]: isLoading })
     return (
       <div>
+        <button>添加todo</button>
+        <div>删除todo</div>
         <button onClick={this.handleClick}>点击获取数据</button>
         <ul className={className}>
           {
