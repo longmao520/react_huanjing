@@ -1,0 +1,13 @@
+ul.special {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #f90;
+}
+
+ul.loading {
+    background: url(@/img/1.gif) no-repeat 50% 50%;
+}
+
+.tips {
+    color: red;
+}

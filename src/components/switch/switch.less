@@ -1,0 +1,54 @@
+.my-switch {
+    display: inline-flex;
+    vertical-align: top;
+
+    .switch-input {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    .switch-label {
+        position: relative;
+        width: 110px;
+        height: 50px;
+        background-color: gray;
+        border-radius: 100px;
+        cursor: pointer;
+
+        .switch-text {
+            position: absolute;
+            top: 12px;
+            left: 8px;
+            color: #fff;
+            font-weight: 900;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .untext {
+            transform: translateX(58px);
+        }
+    }
+
+    .disabled {
+        opacity: .3;
+        cursor: no-drop;
+    }
+
+
+    .switch-button {
+        position: absolute;
+        left: 2px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        transition: all 0.2s;
+        background-color: #fff;
+    }
+
+    .switch-input:checked+.switch-label .switch-button {
+        left: calc(100% - 2px);
+        transform: translateX(-100%) translateY(0%);
+    }
+}
